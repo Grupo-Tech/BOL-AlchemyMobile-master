@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.trucksales.Visual.Cobranza.SeleccionarDeudas">
+
+
+    <!--ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"-->
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/atras_cs" />
+
+                    <TextView
+                        android:id="@+id/toolbar_titlePausa"
+                        style="@style/tituloStyle1"
+                        android:layout_gravity="center"
+                        android:layout_width="300dp"
+                        android:text="@string/TitTransferencias" />
+
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <!-- <Spinner
+               android:id="@+id/spBancos"
+               android:layout_width="match_parent"
+               android:layout_height="40dip"/>-->
+
+            <AutoCompleteTextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                style="@style/text_normal"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:hint="@string/NumBanco"
+                android:id="@+id/TxtCodBanco"
+                />
+            <AutoCompleteTextView
+                android:layout_width="260dp"
+                style="@style/text_normal"
+                android:textSize="18dp"
+                android:id="@+id/TxtNomBanco"
+                android:hint="@string/NomBanco"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!--<Spinner
+                android:id="@+id/spBancos"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"/>-->
+
+            <EditText
+                android:id="@+id/banco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Ingrese el banco"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nro. Operación" />
+
+
+            <Spinner
+                android:id="@+id/spMonedas"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <Spinner
+                android:id="@+id/sp_bancodestino"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <EditText
+                android:id="@+id/bancodestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Ingrese el banco destino"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/sp_cuentadestino"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <EditText
+                android:id="@+id/cuentadestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Ingrese la cuenta"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/moneda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:enabled="false"
+                android:hint="Moneda" />
+
+            <EditText
+                android:id="@+id/importe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:hint="Monto" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnValores"
+                style="@style/button_normal"
+                android:layout_width="match_parent"
+                android:text="@string/AgregaValores" />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/tabla"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5sp" />
+
+    </LinearLayout>
+<!--/ScrollView-->
+
+</LinearLayout>

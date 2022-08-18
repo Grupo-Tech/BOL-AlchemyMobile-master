@@ -1,0 +1,6 @@
+<resources>
+    <string name="TxtbtnPausa">Pausar</string>
+    <string name="TxtBtnAceptar">Aceptar</string>
+    <string name="TxtOtroCliente">Otro Cliente</string>
+    <string name="ClienteXdefecto">Cliente</string>
+</resources>

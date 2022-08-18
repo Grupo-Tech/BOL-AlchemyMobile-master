@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.trucksales.Visual.Cobranza.IngresarCredSuspenso">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_topPausa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/AppTheme">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/btnAtras"
+                            style="@style/atrasToolbar"
+                            android:src="@drawable/atras_cs" />
+
+                        <TextView
+                            android:id="@+id/toolbar_titlePausa"
+                            style="@style/tituloStyle1"
+                            android:layout_gravity="center"
+                            android:layout_width="300dp"
+                            android:text="@string/TitCredSus" />
+
+                    </TableRow>
+                </TableLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/TituloMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SelecMon"
+                    />
+
+                <Spinner
+                    android:id="@+id/spMonedas"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip" />
+
+                <Spinner
+                    android:id="@+id/spCreditos"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip" />
+
+                <EditText
+                    android:id="@+id/importe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textEnd"
+                    android:hint="@string/Monto" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:ems="10"
+                    android:textColor="@color/negro"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/Fecha"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnValores"
+                    style="@style/button_normal"
+                    android:layout_width="match_parent"
+                    android:text="@string/AgregaValores" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/tabla"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

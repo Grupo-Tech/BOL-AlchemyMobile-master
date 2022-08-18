@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dip"
+        tools:ignore="MissingConstraints">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/AppTheme" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/atras"
+                        />
+                    <TextView
+                        style="@style/tituloStyle"
+                        android:text="@string/TituloConsultas"
+                        android:id="@+id/toolbar_titlePausa"
+                        android:textColor="@color/viajes"/>
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tableLayout"
+            >
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/nombreUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textColor="#fbfbfb"
+
+                    />
+                <TextView
+                    android:id="@+id/Fecha"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:textColor="#fbfbfb"
+                    android:background="@color/colorPrimary"
+                    />
+            </TableRow>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_marginTop="35dp"
+                android:id="@+id/btnFactGenerada"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:text="@string/RecibosGen"
+                style="@style/button_normal" />
+
+            <Button
+                android:layout_marginTop="35dp"
+                android:id="@+id/btnRecGenerada"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:text="@string/FacGen"
+                style="@style/button_normal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnMotivoNoCob"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/TitleGeneradosMot"
+                style="@style/button_normal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnAnulado"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/anuladosBtn"
+                style="@style/button_normal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnFicha"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/button_normal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnArqueo"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/NoCierre"
+                style="@style/button_normal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnIngMotivoNoCob"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/TitleGeneradosIngMot"
+                style="@style/button_normal"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

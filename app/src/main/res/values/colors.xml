@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBoton">#07A64C</color>
+    <color name="colorPrimary">#706eab</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Titulo">#00FF00</color>
+    <color name="viajes">#dddce7</color>
+    <color name="Ncredito">#fffeb3</color>
+    <color name="entrega">#94c9c0</color>
+    <color name="Iva">#fb6514</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#ffffff</color>
+    <color name="rojo">#ff0000</color>
+    <color name="verde_principal">#008000</color>
+    <color name="gris">#808080</color>
+
+
+    <color name="retiro">#eee8aa</color>
+    <color  name="prioridad_uno">#f2a7b2</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

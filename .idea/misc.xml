@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/59899/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_pedidos.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/59899/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_pedidos_productos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_cliente_xdefecto.xml" value="0.1671875" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_consultas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_entregas.xml" value="0.1671875" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_factura.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_factura_cobranza.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_factura_directa.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_factura_directa_cono.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_factura_directa_producto_cono.xml" value="0.22" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_facturadirec_productos.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_generados.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_ingresar_cheques.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_ingresar_efectivo.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_ingresar_tarjetacredito.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_ingresar_valores_trucksales.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_pedidos.xml" value="0.22" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_pedidos_productos.xml" value="0.2" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_productos.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_recorrido__viaje.xml" value="0.2814910025706941" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_seleccion_cliente.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/activity_viajes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/dialog_editar_prod.xml" value="0.22" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/dialog_reclamo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Belen/Documents/GitHub/BOL-AlchemyMobile/app/src/main/res/layout/dialog_reclamo_fact.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_cliente3">
+
+        <TextView
+            android:id="@+id/producto"
+            style="@style/TextViewCliente" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_cliente"
+        android:layout_below="@+id/ly_cliente3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Cant"
+            android:background="@color/colorPrimary"
+            android:text="@string/CantidadPrdo"
+            android:textColor="@color/blanco"
+            style="@style/TextViewTitProductos" />
+
+        <TextView
+            android:id="@+id/cantEnt"
+            style="@style/TextViewTitProductos"
+            android:layout_toRightOf="@id/Cant"
+            android:text="@string/CantEntProd" />
+
+        <TextView
+            android:id="@+id/Unit"
+            android:layout_toRightOf="@id/cantEnt"
+            android:text="@string/UnitProd"
+            android:gravity="right"
+            style="@style/TextViewTitProductos" />
+
+        <TextView
+            android:id="@+id/Iva"
+            android:layout_toRightOf="@id/Unit"
+            android:text="@string/IVAProd"
+            android:gravity="right"
+            style="@style/TextViewTitProductos" />
+
+        <TextView
+            android:id="@+id/SubTotal"
+            style="@style/TextViewTitProductos2"
+            android:layout_toRightOf="@id/Iva"
+            android:gravity="right"
+            android:text="@string/SubTotProd" />
+
+        <TextView
+            android:id="@+id/Rec"
+            android:layout_toRightOf="@id/SubTotal"
+            android:text="@string/SubTotRec"
+            style="@style/TextViewTitProductos" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_cliente2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_cliente"
+        android:background="@color/viajes"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/datoCant"
+            style="@style/TextViewDatosProductos" />
+
+        <!--<EditText
+            android:id="@+id/datocantEnt"
+            android:layout_toRightOf="@id/datoCant"
+            style="@style/TextViewDatosProductos" />-->
+
+        <TextView
+            android:id="@+id/datocantEnt"
+            android:layout_toRightOf="@id/datoCant"
+            android:gravity="right"
+            style="@style/TextViewDatosProductos" />
+
+        <TextView
+            android:id="@+id/datoUnit"
+            android:layout_toRightOf="@id/datocantEnt"
+            android:gravity="right"
+            style="@style/TextViewDatosProductos" />
+
+        <TextView
+            android:id="@+id/datoIva"
+            android:layout_toRightOf="@id/datoUnit"
+            android:gravity="right"
+            style="@style/TextViewDatosProductos" />
+
+        <TextView
+            android:id="@+id/datoSubTotal"
+            android:layout_toRightOf="@id/datoIva"
+            android:gravity="right"
+            style="@style/TextViewDatosProductos2" />
+
+        <ImageView
+            android:id="@+id/reclamo"
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/txtFecha"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/datoSubTotal"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@drawable/cancelar"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

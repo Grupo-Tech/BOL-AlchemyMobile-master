@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.trucksales.Visual.Cobranza.IngresarObservaciones">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/atras_cs" />
+
+                    <TextView
+                        android:id="@+id/toolbar_titlePausa"
+                        style="@style/tituloStyle1"
+                        android:layout_width="163dp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:text="@string/TitNoCobro" />
+
+                    <ImageView
+                        android:id="@+id/casita"
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/casita_cs" />
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/LblUsu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb" />
+
+                <TextView
+                    android:id="@+id/LblFecha"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ClienteSeleccionado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/documento"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#c2c1d2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/motivo" />
+        <Spinner
+            android:id="@+id/DDLMotivoNoCobro"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#c2c1d2"
+            />
+        <TextView
+            android:id="@+id/TituloFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/TitleProxVisi"
+            />
+
+        <EditText
+            android:id="@+id/fechaProxVisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="dd/mm/yyyy"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/TituloObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/TitleObs"
+            />
+
+        <EditText
+            android:id="@+id/observaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textStart"
+            android:hint="@string/Observaciones" />
+        
+        <Button
+            android:id="@+id/btnAceptar"
+            style="@style/button_normal"
+            android:layout_width="match_parent"
+            android:text="@string/AceptarRecibo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/solRec"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/rojo"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.trucksales.Visual.Cobranza.Recibo">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <ImageView
+                        style="@style/atrasToolbar"
+                        android:id="@+id/btnAtras"
+                        android:src="@drawable/atras"
+                        />
+                    <TextView
+                        style="@style/tituloStyle"
+                        android:textAlignment="center"
+                        android:text="@string/TituloRecibos"
+                        android:textColor="@color/viajes"/>
+                    <ImageView
+                        android:id="@+id/casita"
+                        style="@style/casitaStyle"
+                        android:src="@drawable/casita_cs" />
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/LblUsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb" />
+
+                <TextView
+                    android:id="@+id/tipoC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textAlignment="4"
+                    android:textColor="#fbfbfb" />
+
+                <TextView
+                    android:id="@+id/LblFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/NomEmp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/negro"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/TxtCliente"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/negro"
+            android:textSize="18dip"/>
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/TxtTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/TxtACuenta"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/negro"
+                            android:textSize="18dip"
+                            />
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TitulRec"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/valorRecibo"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/EdtNumRecibo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/TituloFecha"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ReciboFec"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/TxtFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="dd/mm/yyyy"
+                android:layout_marginRight="20dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true" />
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/aceptarRecibo"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/AceptarRecibo"
+                android:background="@drawable/button_round_internaluse"
+                android:textColor="@color/blanco"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/solRec"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="@color/rojo"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                >
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prueba">
+            <!--  <ScrollView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_weight="1"
+                  android:scrollbars="none">-->
+                  <RelativeLayout
+                      android:id="@+id/rel2"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="bottom" >
+                      <TableLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/TablaFacAfec"
+                          >
+
+                      </TableLayout>
+                  </RelativeLayout>
+              <!--  </ScrollView>-->
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/otra"
+                android:layout_below="@+id/prueba">
+                <!--  <ScrollView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">-->
+                      <RelativeLayout
+                          android:id="@+id/rel4"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="bottom" >
+                          <TableLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/TablaTitulo">
+                          </TableLayout>
+                      </RelativeLayout>
+                  <!-- </ScrollView>-->
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otra">
+            <!--<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">-->
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom" >
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TablaValores">
+                    </TableLayout>
+                </RelativeLayout>
+            <!-- </ScrollView>-->
+         </LinearLayout>
+         </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+ </LinearLayout>

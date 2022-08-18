@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.TruckSales.ClienteXDefecto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dip">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/AppTheme" >
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/atras_cs" />
+
+                    <TextView
+                        android:id="@+id/toolbar_titlePausa"
+                        style="@style/tituloStyle"
+                        android:text="@string/cliente"
+                        android:textColor="@color/viajes" />
+                    <ImageView
+                        android:id="@+id/factura_directa"
+                        style="@style/casitaStyle"
+                        android:src="@drawable/facturadirecta"
+                        />
+                    <ImageView
+                        android:id="@+id/casita"
+                        style="@style/casitaStyle"
+                        android:src="@drawable/casita"
+                        />
+
+                    <ImageView
+                        android:id="@+id/btnPedidos"
+                        style="@style/casitaStyle"
+                        android:src="@drawable/pedidos"
+                        />
+
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/LblUsu"
+                    android:layout_width="221dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb" />
+
+                <TextView
+                    android:id="@+id/LblFecha"
+                    android:layout_width="194dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb" />
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtDatosCliente"
+            android:textColor="@color/negro"
+            android:layout_margin="10dp"
+            android:text="Sin Cliente"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context="com.example.user.trucksales.Visual.TruckSales.ClienteXDefecto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/btnAceptarViaje"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_round_internaluse"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/aceptar"
+                    android:textColor="#F5F5F5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="25dp"
+                    />
+                <Button
+                    android:id="@+id/btnOtroCliente"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_round_internaluse"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/oCliente"
+                    android:textColor="#F5F5F5"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <Button
+                    android:id="@+id/btnPausar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_round_internaluse"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/Pausar"
+                    android:textColor="#F5F5F5"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

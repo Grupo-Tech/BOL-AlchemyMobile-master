@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.Cobranza.SituacionCliente">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/AppTheme" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <ImageView
+                        style="@style/atrasToolbar"
+                        android:id="@+id/btnAtras"
+                        android:src="@drawable/atras_cs"
+                        />
+
+                    <TextView
+                        android:id="@+id/titulo"
+                        style="@style/tituloStyle1"
+                        android:layout_width="300dp"
+                        android:text="@string/SeleccionarFicha" />
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/LblUsu"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb"
+                    android:background="@color/colorPrimary"
+                    />
+                <TextView
+                    android:id="@+id/LblFecha"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb"
+                    android:background="@color/colorPrimary"
+                    />
+            </TableRow>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="35dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/botonCliente"/>
+                        <Spinner
+                            android:id="@+id/SPClientes"
+                            android:layout_width="200dip"
+                            android:layout_height="45dip"
+                            android:background="#c2c1d2"
+                            />
+
+                    </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/TituloFecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TitleProxFecha"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="18dp"
+                            android:textSize="20dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/fechaProxVisi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="dd/mm/yyyy"
+                            android:textAlignment="center"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="date"
+                            android:focusable="false"
+                            android:clickable="true" />
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/TxtCodCliente"
+                    style="@style/text_normal"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:hint="@string/CodCliente"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <AutoCompleteTextView
+                    android:layout_width="320dp"
+                    style="@style/text_normal"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/TxtNombreCliente"
+                    android:hint="@string/NombCliente"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btnTraerDeudas"
+                    android:layout_width="320dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="18dp"
+                    style="@style/button_normal"
+                    android:text="@string/ver"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

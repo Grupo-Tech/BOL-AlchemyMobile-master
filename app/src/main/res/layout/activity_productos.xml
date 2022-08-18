@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.TruckSales.Productos">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <ImageView
+                        style="@style/atrasToolbar"
+                        android:id="@+id/btnAtras"
+                        android:src="@drawable/atras"
+                        />
+                    <TextView
+                        style="@style/tituloStyle"
+                        android:text="@string/TituloProductos"
+                        android:textColor="@color/viajes"/>
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/TextCliente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/negro"/>
+            <TextView
+                android:id="@+id/TextDestino"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/negro"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/TxtViaje"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="@color/negro"
+
+                    />
+               <TextView
+                   android:id="@+id/TxtOrden"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:padding="5dip"
+                   android:text="Prueba"
+                   android:textColor="@color/negro"/>
+                <TextView
+                    android:id="@+id/TxtPedido"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="@color/negro"
+
+                    />
+            </TableRow>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/BtnFactura"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_round_internaluse"
+                android:textColor="@color/blanco"
+                android:gravity="center"
+                android:text="Factura" />
+
+            <Button
+                android:id="@+id/BtnRemito"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_round_internaluse"
+                android:textColor="@color/blanco"
+                android:gravity="center"
+                android:text="remito" />
+
+            <Button
+                android:id="@+id/BtnSiguienteOE"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_round_internaluse"
+                android:textColor="@color/blanco"
+                android:gravity="center"
+                android:text="Siguiente OE" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.user.trucksales.Visual.TruckSales.Productos">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/rel2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom" >
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TablaFactura"
+                        android:layout_margin="2dp">
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TablaFactura"
+                        android:id="@+id/TablaFactura2"
+                        android:layout_margin="2dp">
+                    </TableLayout>
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

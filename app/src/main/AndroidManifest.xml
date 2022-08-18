@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.trucksales">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.example.user.trucksales.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <application
+        android:name=".Negocio.ApplicationContext"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/truckicon0"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name=".Visual.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Visual.TruckSales.Viajes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Entregas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Recorrido_Viaje"
+            android:label="@string/title_activity_recorrido__viaje"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Productos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Productos2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.PausarViaje"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.ClienteXDefecto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.factura"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Consultas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Generados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.CajasTraidas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Remito"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.TransMap"
+            android:label="@string/title_activity_trans_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.Anulados"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Visual.TruckSales.IngresarValoresTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarChequesTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarDifRetenTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarEfectivoTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarEfectivoUSDTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarRetencionesTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarTarjetaCreditoTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarTarjetaDebitoTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarTransferenciasTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.IngresarVueltoTruckSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.FacturaDirectaCono"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.FacturaDirectaProductoCono"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Visual.SeleccionFuncionablidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.MenuCobranzas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.transmap_cobranza"
+            android:label="@string/title_activity_transmap_cobranza" />
+        <activity
+            android:name=".Visual.Cobranza.SeleccionarMoneda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.SeleccionarDeudas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Configuracion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.SeleccionCliente"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarValores"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarEfectivo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarEfectivoUSD"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarCheques"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarDifReten"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarRetenciones"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarTarjetaCredito"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarTarjetaDebito"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarTransferencias"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarVuelto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.Recibo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.TruckSales.SalirViaje"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.ConsultasCobrador"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.RecibosGenerados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.RecibosAnulados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.CierreCaja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visual.Cobranza.IngresarObservaciones"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.ValoresRecibidos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.FacturaCobranza"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.SituacionCliente"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.IngresarCredSuspenso"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.ObservacionesGeneradas"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.FacturasGeneradas"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Cobranza.IngresarMotNoCob"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Visual.FacturaDirecta.FacturaDirecta"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.FacturaDirecta.FacturaProductos"
+        android:screenOrientation="portrait" />
+        <activity android:name=".Visual.FacturaDirecta.ReporteStock"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.FacturaDirecta.NotaCredito"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.FacturaDirecta.BuscarFactura"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.FacturaDirecta.Menu"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Visual.Pedidos.Pedidos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Visual.Pedidos.ProductosPedidos"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

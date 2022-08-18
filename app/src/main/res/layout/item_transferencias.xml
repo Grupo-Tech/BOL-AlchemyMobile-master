@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/ly_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/viajes">
+
+        <TextView
+            android:id="@+id/txtBanco"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="nombreBanco"
+            android:textAlignment="center"
+            android:textColor="#66656b"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:autoSizeMaxTextSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txtDetalle"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/txtBanco"
+            android:fontFamily="sans-serif-thin"
+            android:text="transaccion"
+            android:textAlignment="center"
+            android:textColor="#66656b"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/txtBancoDestino"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtDetalle"
+            android:fontFamily="sans-serif-thin"
+            android:text="bancoDestino"
+            android:textAlignment="center"
+            android:textColor="#66656b"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/txtCuentadestino"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/txtBancoDestino"
+            android:layout_below="@+id/txtDetalle"
+            android:fontFamily="sans-serif-thin"
+            android:text="cuentaDes"
+            android:textAlignment="center"
+            android:textColor="#66656b"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/txtImporte"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/txtCuentadestino"
+            android:layout_below="@+id/txtDetalle"
+            android:fontFamily="sans-serif-thin"
+            android:text="importe"
+            android:textAlignment="center"
+            android:textColor="#66656b"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"/>
+
+        <ImageView
+            android:id="@+id/ico_eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@drawable/eliminar"
+            android:layout_toRightOf="@+id/txtImporte"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

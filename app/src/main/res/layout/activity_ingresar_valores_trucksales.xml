@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.trucksales.Visual.TruckSales.IngresarValoresTruckSales">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/atras_cs" />
+
+                    <TextView
+                        android:id="@+id/toolbar_titlePausa"
+                        style="@style/tituloStyle"
+                        android:text="@string/TitValores" />
+
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingRight="20dip"
+                        android:paddingLeft="20dp"
+                        android:text="@string/TitleImpresora"
+                        android:textColor="#000000"
+                        android:textSize="20dip" />
+
+                    <Spinner
+                        android:id="@+id/spinner_bt_device_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/titleEfectivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                    <ImageView
+
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hyphenationFrequency="normal"
+                        android:text="@string/efectivo"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Efectivo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/titleEfectivoUSD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/efectivousd"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/EfectivoUSD"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/titleCheques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="@string/cheques"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Cheques"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleTarjetaCredito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TarjetaCredito"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/TarjetaCredito"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleTarjetaDebito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TarjetaDebito"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/TarjetaDebito"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleTransferencias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Transferencias"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Transferencias"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleRetenciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Retenciones"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Retenciones"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleVuelto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Vuelto"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Vuelto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleCredSus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/CredSuspenso"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/CreditoSus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TitleDif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/viajes"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/add_valor" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/DifRet"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Dif"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/ClienteSeleccionado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/diferencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/acuenta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btnValores"
+            style="@style/button_normal"
+            android:layout_width="match_parent"
+            android:text="@string/AceptarValores" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.FacturaDirecta.ReporteStock">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_topPausa"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme" >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <ImageView
+                    style="@style/atrasToolbar"
+                    android:id="@+id/btnAtras"
+                    android:src="@drawable/atras_cs"
+                    />
+                <TextView
+                    style="@style/tituloStyle1"
+                    android:text="@string/ReporteStock"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/toolbar_titlePausa"/>
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/LblUsu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="left"
+                android:padding="5dip"
+                android:text="Prueba"
+                android:textColor="#fbfbfb" />
+
+            <TextView
+                android:id="@+id/viaje"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="left"
+                android:padding="5dip"
+                android:text="Prueba"
+                android:textColor="#fbfbfb" />
+
+            <TextView
+                android:id="@+id/LblFecha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="right"
+                android:padding="5dip"
+                android:text="Prueba"
+                android:textColor="#fbfbfb" />
+        </TableRow>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <AutoCompleteTextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                style="@style/text_normal"
+                android:layout_marginRight="15dp"
+                android:hint="@string/CodProd"
+                android:id="@+id/CodProducto"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                style="@style/text_normal"
+                android:id="@+id/NomProducto"
+                android:hint="@string/NombProd"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/rel2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom" >
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tablaProductos">
+
+                    </TableLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

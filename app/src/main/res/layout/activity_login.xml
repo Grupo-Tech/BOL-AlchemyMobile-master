@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.Login">
+
+    <LinearLayout
+        android:id="@+id/mainLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eceaea"
+        android:orientation="vertical"
+        android:paddingTop="35dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#bfb7b7"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="CONFIG"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_company"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/link_to_register"
+            style="@style/subtitle"
+            android:text="@string/ingrese_credenciales" />
+
+        <EditText
+            android:id="@+id/txtNombUsu"
+            style="@style/text_normal"
+            android:hint="@string/usuario"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            style="@style/text_normal"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/button_normal"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/switchCompat"
+                android:text="@string/log" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchCompat"
+                android:layout_width="126dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:text="Recordar usuario"
+                android:textColor="@color/gris"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_error"
+            style="@style/text_retorno" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

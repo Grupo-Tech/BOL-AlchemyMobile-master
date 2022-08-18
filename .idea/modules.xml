@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BOL-AlchemyMobile.iml" filepath="$PROJECT_DIR$/.idea/modules/BOL-AlchemyMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BOL-AlchemyMobile-master.iml" filepath="$PROJECT_DIR$/.idea/modules/BOL-AlchemyMobile-master.iml" group="BOL-AlchemyMobile-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BOL-AlchemyMobile.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BOL-AlchemyMobile.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/regoPrinterSDKLib/BOL-AlchemyMobile.regoPrinterSDKLib.iml" filepath="$PROJECT_DIR$/.idea/modules/regoPrinterSDKLib/BOL-AlchemyMobile.regoPrinterSDKLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/regoPrinterSDKLibV03.02.04/BOL-AlchemyMobile.regoPrinterSDKLibV03.02.04.iml" filepath="$PROJECT_DIR$/.idea/modules/regoPrinterSDKLibV03.02.04/BOL-AlchemyMobile.regoPrinterSDKLibV03.02.04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="BOL-AlchemyMobile-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/regoPrinterSDKLib/regoPrinterSDKLib.iml" filepath="$PROJECT_DIR$/.idea/modules/regoPrinterSDKLib/regoPrinterSDKLib.iml" group="BOL-AlchemyMobile-master/regoPrinterSDKLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/regoPrinterSDKLibV03.02.04/regoPrinterSDKLibV03.02.04.iml" filepath="$PROJECT_DIR$/.idea/modules/regoPrinterSDKLibV03.02.04/regoPrinterSDKLibV03.02.04.iml" group="BOL-AlchemyMobile-master/regoPrinterSDKLibV03.02.04" />
+    </modules>
+  </component>
+</project>

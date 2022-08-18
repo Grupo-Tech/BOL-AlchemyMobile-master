@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.Cobranza.CierreCaja">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/AppTheme" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <ImageView
+                        style="@style/atrasToolbar"
+                        android:id="@+id/btnAtras"
+                        android:src="@drawable/atras_cs"
+                        />
+                    <TextView
+                        style="@style/tituloStyle"
+                        android:textAlignment="center"
+                        android:id="@+id/toolbar_titlePausa"/>
+
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/LblUsu"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb"
+                    android:background="@color/colorPrimary"
+                    />
+                <TextView
+                    android:id="@+id/LblFecha"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="Prueba"
+                    android:textColor="#fbfbfb"
+                    android:background="@color/colorPrimary"
+                    />
+            </TableRow>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/titleEfectivo"
+                    android:clickable="true"
+                    >
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hyphenationFrequency="normal"
+                        android:text="@string/efectivo"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/Efectivo"
+                        android:layout_width="39dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/faltaEfect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/titleEfectivoUSD"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/efectivousd"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <EditText
+                        android:id="@+id/EfectivoUSD"
+                        android:layout_width="39dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/faltaDls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/titleCheques"
+                    android:clickable="true">
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/partialpay" />
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cheques"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Cheques"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                    <TextView
+                        android:id="@+id/ChequesUSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/TitleTarjetaCredito"
+                    android:clickable="true">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/partialpay" />
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TarjetaCredito"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/TarjetaCredito"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                    <TextView
+                        android:id="@+id/TarjetaCreditoUSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/TitleTarjetaDebito"
+                    android:clickable="true">
+
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/partialpay" />
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TarjetaDebito"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/TarjetaDebito"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                    <TextView
+                        android:id="@+id/TarjetaDebitoUSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/TitleTransferencias"
+                    android:clickable="true">
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/partialpay" />
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Transferencias"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Transferencias"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                    <TextView
+                        android:id="@+id/TransferenciasUSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/viajes"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/TitleRetenciones"
+                    android:clickable="true">
+
+                    <ImageView
+                        style="@style/casitaStyle"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/partialpay" />
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Retenciones"
+                        android:textColor="#000000"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/Retenciones"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                    <TextView
+                        android:id="@+id/RetencionesUSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Caja"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/rojo"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Retorno"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/rojo"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAceptar"
+                style="@style/button_normal"
+                android:layout_width="match_parent"
+                android:text="@string/AceptarValores" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

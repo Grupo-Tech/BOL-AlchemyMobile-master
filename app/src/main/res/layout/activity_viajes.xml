@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.TruckSales.Viajes">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dip">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/AppTheme" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        android:src="@drawable/atras"
+                        style="@style/atrasToolbar"
+                        />
+                    <TextView
+                        style="@style/tituloStyle"
+                        android:text="@string/ViajeTitle"
+                        android:id="@+id/toolbar_title"
+                        android:textColor="@color/viajes"/>
+
+                    <ImageView
+                        android:id="@+id/factura_directa"
+                        style="@style/casitaStyle"
+                        android:visibility="gone"
+                        android:src="@drawable/facturadirecta" />
+
+                    <ImageView
+                        android:id="@+id/BtnConsulta"
+                        style="@style/casitaStyle"
+                        android:src="@drawable/blockfacturas"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/btnPedidos"
+                        style="@style/casitaStyle"
+                        android:src="@drawable/pedidos"
+                        />
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tableLayout"
+            >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+               <TextView
+                   android:id="@+id/nombreUsuario"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="?attr/colorPrimary"
+                   android:layout_weight="1"
+                   android:padding="5dip"
+                   android:layout_gravity="center"
+                   android:gravity="left"
+                   android:textColor="#fffcfc"
+                   />
+               <TextView
+                   android:id="@+id/Fecha"
+                   android:layout_gravity="center"
+                   android:gravity="right"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:padding="5dip"
+                   android:textColor="#fffcfc"
+                   />
+          </TableRow>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/NomUus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.user.trucksales.Visual.TruckSales.Viajes">
+        <ScrollView
+            android:id="@+id/ListaViajes"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableLayout
+                    android:id="@+id/tabla"
+                    android:scrollbarTrackVertical="@id/tabla"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dip"
+                    android:isScrollContainer="true"
+                    android:divider="@drawable/truckicon0"
+                    android:layout_marginTop="2dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginBottom="4dip"
+                    >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"></TableRow>
+                </TableLayout>
+                <!--<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+                    <com.example.user.trucksales.Negocio.GifImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_weight="1"
+                        android:id="@+id/loadgif"/>
+                </LinearLayout>-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+           <!-- -->
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trucksales.Visual.TruckSales.SalirViaje">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dip"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="40dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_topPausa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/btnAtras"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/atras" />
+
+                    <TextView
+                        android:id="@+id/toolbar_titleSalirViaje"
+                        style="@style/tituloStyle1"
+                        android:layout_width="252dp"
+                        android:layout_height="54dp"
+                        android:gravity="center"
+                        android:text="@string/SalidaTitle"
+                        android:textColor="@color/viajes" />
+
+                    <ImageView
+                        android:id="@+id/btnConsultas"
+                        style="@style/atrasToolbar"
+                        android:src="@drawable/blockfacturas" />
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/SVTVDatosCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:textSize="20sp" />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context="com.example.user.trucksales.Visual.TruckSales.SalirViaje">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/SVBTNOtroEnvio"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/button_round_internaluse"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/oCliente"
+                android:textColor="#F5F5F5" />
+
+            <Button
+                android:id="@+id/SVBTNRetornar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/button_round_internaluse"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/SVButtonMessage_Retornar"
+                android:textColor="#F5F5F5" />
+
+            <Button
+                android:id="@+id/CXD_Button_LogOut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_round_internaluse"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/CXDButtonMessage_LogOut"
+                android:textColor="#F5F5F5" />
+        </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

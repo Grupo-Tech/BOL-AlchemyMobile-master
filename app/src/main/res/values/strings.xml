@@ -1,0 +1,432 @@
+<resources>
+    <!--Agregados arriba el 02-04-2018 probando problema con string.xml-->
+
+    <string name="version2">V 2.33</string>
+    <!-- Titulos de los activities -->
+    <string name="Anulados">ANULADOS</string>
+    <string name="RecAnulados">RECIBOS ANULADOS</string>
+    <string name="FacGeneradas">FACTURA GENERADAS</string>
+    <string name="TituloCajasTraidas">ENVASES</string>
+    <string name="cliente">CLIENTE</string>
+    <string name="TituloFactura">FACTURA</string>
+    <string name="TituloFacturaInteres">FACTURA INTERES</string>
+    <string name="TituloConsultas">CONSULTAS</string>
+    <string name="TituloConsultasCobrador">CONSULTAS RECIBOS</string>
+    <string name="TituloRemito">REMITO</string>
+    <string name="TituloOE">SIGUIENTE OE</string>
+    <string name="TitleGenerados">GENERADOS</string>
+    <string name="TitleGeneradosRec">RECIBOS GENERADOS</string>
+    <string name="TitleGeneradosMot">NO COBRADOS GENERADOS</string>
+    <string name="TitleGeneradosIngMot">INGRESAR MOTIVO NO COBRADOS</string>
+    <string name="TituloEntrega">ENTREGAS</string>
+    <string name="TituloProductos">PEDIDOS PRODUCTOS</string>
+    <string name="TituloRecibos">RECIBO</string>
+    <string name="PausaTitle">PAUSAR VIAJE</string>
+    <string name="MenuCobranzaTitle">COBRANZA</string>
+    <string name="RecorridoTitle">EN VIAJE</string>
+    <string name="SeleccionarClienteTitle">CLIENTES</string>
+    <string name="SelccionTitle">FUNCIONES</string>
+    <string name="MoendaTitle">MONEDA</string>
+    <string name="DeudasTitle">DEUDAS</string>
+    <string name="MotNoCob">"Motivo no cobrado:"</string>
+    <string name="ViajeTitle">VIAJES</string>
+    <string name="ViajeCobrador">VIAJE COBRADOR</string>
+    <string name="SalidaTitle">ABANDONAR CLIENTE</string>
+    <string name="RetornoTitle">RETORNANDO</string>
+    <string name="PausadoTitle">PAUSADO</string>
+    <!-- Fin titulos de los activities -->
+    <string name="TitleObs">Observaciones: </string>
+    <string name="TitleProxVisi">Proxima visita: </string>
+    <string name="TitleProxFecha">Hasta: </string>
+    <string name="ReciboFec">Fecha: </string>
+    <string name="ReciboNum">Num recibo: </string>
+    <string name="aceptar">Aceptar</string>
+    <string name="original">Original</string>
+    <string name="copia">Copia</string>
+    <string name="datos">"Obteniendo datos "</string>
+    <string name="errorConect2">"No se pudieron obtener los datos, verifique su conexión"</string>
+    <string name="espere">"Por favor, espere.. "</string>
+    <string name="buscar">Buscar</string>
+    <string name="ver">Visualizar</string>
+    <string name="buscarCliente">Buscando cliente mas cercano</string>
+    <string name="impRemito">Impresion Remito</string>
+    <string name="FacturasGen">facturas generadas</string>
+    <string name="RecibosGen">Recibos generados</string>
+    <string name="FacGen">Facturas Interes generadas</string>
+    <string name="Prueba">pru</string>
+    <string name="RemitoGen">remitos generados</string>
+    <string name="Cobranza">Cobranza</string>
+    <string name="NroDocum">Nro. Docum: </string>
+    <string name="FechaVenc">Fecha vencimiento:</string>
+    <string name="FechaIngc">Debe ingresar una fecha:</string>
+    <string name="Cli">Debe ingresar un cliente:</string>
+    <string name="Fecha">Fecha:</string>
+    <string name="Monto">Monto:</string>
+    <string name="Datos">Debe completar todos los datos:</string>
+    <string name="CodMoneda">Moneda Recibo:</string>
+    <string name="Empresa">Empresa:</string>
+    <string name="documento">Documento de referencia:</string>
+    <string name="motivo">Seleccione motivo:</string>
+    <string name="CodMoneda2">Moneda Factura:</string>
+    <string name="TruckSalesTit">Trucksales</string>
+    <string name="MenCobranza">VIAJE COBRANZA</string>
+    <string name="SeleccionarCliente">CLIENTES</string>
+    <string name="IngMotCob">INGRESA MOTIVO NO COBRANZA</string>
+    <string name="FacturaDirecta">FACTURA DIRECTA</string>
+    <string name="ReporteStock">REPORTE STOCK</string>
+    <string name="SeleccionarFicha">SITUACION CLIENTE</string>
+    <string name="CierreCaja">CIERRE DE CAJA</string>
+    <string name="NoCierre">ARQUEO DE CAJA</string>
+    <string name="NoCobrado">MOTIVO NO COBRADO</string>
+    <string name="ValoresRec">VALORES RECIBIDOS</string>
+    <string name="ImporteRec">El importe debe ser menor al importe recibido </string>
+    <string name="IngreseTot">"Total: "</string>
+    <string name="IngreseDeud">Debe ingresar un valor efectivo</string>
+    <string name="Valmen">Debe ingresar un valor menor</string>
+    <string name="Sindatos">No existen datos</string>
+    <string name="Caja">Debe seleccionar una caja</string>
+    <string name="Noexiste">No existen valores con el documento seleccionado</string>
+    <string name="Falta">Falta entregar: </string>
+    <string name="SeleccCaja">Seleccionar Caja</string>
+    <string name="TitMoenda">MONEDA</string>
+    <string name="TitDeudas">DEUDAS</string>
+    <string name="TitNoCobro">MOTIVO NO COBRO</string>
+    <string name="ObservacionAgregada">Motivo no cobro agregado</string>
+    <string name="y">y</string>
+    <string name="sucursal">Sucursal</string>
+    <string name="NroViaje">Nro. Viaje</string>
+    <string name="ordenEntrega">Orden de entrega:</string>
+    <string name="noHayAnuladas">No hay facturas anuladas para hoy</string>
+    <string name="noHayRecAnuladas">No hay recibos anulados para hoy</string>
+    <string name="noHayFac">No hay facturas generadas para hoy</string>
+    <string name="oCliente">Otro cliente</string>
+    <string name="cargando_dialog">Cargando...</string>
+    <string name="anuladosBtn">Anulados</string>
+    <string name="ErrorAnulados">No se obtuvo respuesta</string>
+    <string name="anuladasHoy"> Facturas anuladas hoy</string>
+    <string name="anuladasHoyRec"> Recibos anulados hoy</string>
+    <string name="facGen"> Facturas de Interes generadas hoy</string>
+    <string name="ErrorConexion">No hay conexion a internet</string>
+    <string name="botonPausa">Seleccionar motivo</string>
+    <string name="ValorFact0">SOLAMENTE PARA FACTURA</string>
+    <string name="ValorRec">SOLAMENTE PARA RECIBO</string>
+    <string name="dispo">Disponible:</string>
+    <string name="Ndispo">No Disponible:</string>
+    <string name="valorFact1">Cod Suc Tri</string>
+    <string name="valorFact2">Cod Fac Tri</string>
+    <string name="valorFact3">Num Fact</string>
+    <string name="valorReten">Num Reten</string>
+    <string name="codSuc">Cod Suc</string>
+    <string name="codFac">Cod Fac</string>
+    <string name="valorRecibo">Número: </string>
+    <string name="valorCheque">Ingrese cheque</string>
+    <string name="ValorBotonFact">Validar Facutra</string>
+    <string name="IngresoVal">Ingresar Valores</string>
+    <string name="ValorBotonRec">Validar Recibo</string>
+    <string name="AceptarRecibo">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="GuardaUbi">Desea guardar la ubicación del cliente?</string>
+    <string name="ElimRec">Desea anular el recibo?</string>
+    <string name="ElimFac">Desea anular la factura?</string>
+    <string name="FacturasGeneradas">Facturas Generadas</string>
+    <string name="Faltantes">Faltantes en  Orden de Entrega</string>
+    <string name="tipo">Tipo</string>
+    <string name="saldoAnterior">S. Ant</string>
+    <string name="EntregaCaja">Entrega</string>
+    <string name="RetriaCaja">Retira</string>
+    <string name="SaldoCaja">Saldo</string>
+    <string name="TotalCaja">"Total Cobrado: "</string>
+    <string name="TotalDeuda">"Total Deuda Seleccionada: "</string>
+    <string name="usuarioTool">"Usuario: "</string>
+    <string name="clienteGenerados">"Cliente: "</string>
+    <string name="SucursalGenerados">"Sucursal: "</string>
+    <string name="deudaselec">"Debe seleccionar alguna deuda: "</string>
+    <!--Viajes-->
+    <string name="Hola">Hola</string>
+    <string name="Tienes">tienes</string>
+    <string name="Viajes">viajes hoy</string>
+    <string name="Selec">Seleccione un viaje para iniciar</string>
+    <string name="SelecMon">Seleccione una moneda</string>
+    <!--fin de viajes-->
+    <!--Productos-->
+    <string name="OredenProd">Orden: </string>
+    <string name="PedidoProd">Pedido: </string>
+    <string name="NumViajeProd">Nro. Viaje: </string>
+    <string name="NomTit">Cliente: </string>
+    <string name="NomEmp">Empresa: </string>
+    <string name="CodTit">Código: </string>
+    <string name="Tel">Tel: </string>
+    <string name="Direccion">Dirección: </string>
+    <string name="CantidadPrdo">Ctd.</string>
+    <string name="CantEntProd">Ctd. Ent.</string>
+    <string name="Dto">Dto.</string>
+    <string name="UnitProd">Unit.</string>
+    <string name="IVAProd">IVA </string>
+    <string name="SubTotProd">SubTotal </string>
+    <string name="SubTotRec">Rec </string>
+    <string name="Quitar">Quitar </string>
+    <string name="ImpusetoIVA10">"IMP IVA 10%: "</string>
+    <string name="ImpuestoIVA5">"IMP IVA 5%: "</string>
+    <string name="TotSinIVAProd">"Total sin IVA: "</string>
+    <string name="TotIVA">"IMP IVA Total: "</string>
+    <string name="TotPedInicial">"Total Ped. Inicial: "</string>
+    <string name="Cobrar">Total Deuda: </string>
+    <string name="Descuento">"Descuento: "</string>
+    <string name="ErrorDescuento">"El importe no puede ser menor que el descuento: "</string>
+    <string name="ACuenta">A Cuenta: </string>
+    <string name="Diferencia">Diferencia: </string>
+    <string name="Completar">Debe completar el monto a cobrar </string>
+    <!--fin de Productos-->
+    <!--ClienteXDefecto -->
+    <string name="HorDeCliDef">Horario de </string>
+    <string name="HorFecVenc">Fecha viaje </string>
+    <string name="HorFec">"Fecha: "</string>
+    <string name="Observaciones">Obs.: </string>
+    <string name="Fechavisita">Fecha proxima visita.: </string>
+    <string name="aCli"> a </string>
+    <string name="RemitoExito">El remito fue agregado exitosamente</string>
+    <string name="Observ">No existen registros de la fecha actual de motivos no cobrados</string>
+    <string name="NroOrdenCli">Nro. Orden: </string>
+    <!--fin de ClienteXDefecto-->
+    <!--Recorrido viaje-->
+    <string name="DistanciaRec">Distancia:</string>
+    <string name="Kms">Km</string>
+    <string name="HComienz">Hora inicio:</string>
+    <string name="RVMessageButton_FinalizarViaje">Finalizar viaje</string>
+    <!--fin de recorrido-->
+    <!--Generados-->
+    <string name="ViajesGen">Viaje:</string>
+    <string name="Nro_Docum">Recibo:</string>
+    <string name="Nro">Nro.:</string>
+    <string name="recibGen">recibos generados.</string>
+    <string name="motGen">motivos generados.</string>
+    <string name="OEnt">Orden de entrega:</string>
+    <string name="NroFact">Nro. factura:</string>
+    <string name="NroRem">Nro. remito:</string>
+    <string name="Turno">Turno:</string>
+    <string name="HroGen">Hora:</string>
+    <string name="FecGen">Fecha rec.:</string>
+    <string name="ToastText">NO SE OBTUVO UBICACION ACTUAL</string>
+    <string name="ToastText1">No se obtuvieron los clientes del viaje seleccionado</string>
+    <string name="ToastText2">No se pudo ingresar los valores de la factura de interes</string>
+    <string name="ToastText3">Debe completar los datos</string>
+    <!--fin de Generados-->
+    <!--Entregas-->
+    <string name="NroViajeEntrega">Nro. Viaje:</string>
+    <!--fin de Entregas-->
+    <!--Remito-->
+    <string name="SoloRemito">SOLAMENTE PARA REMISION</string>
+    <string name="BtnRemito">Generar Remito</string>
+    <string name="numRemito">num Remito</string>
+    <!--fin de remito-->
+    <!-- ClienteXDefecto -->
+    <string name="CXDButtonMessage_LogOut">Salir</string>
+    <string name="CXDTitleMessage_Retiro">Retiro</string>
+    <string name="CXDTextRetiro_NumViaje">Numero de viaje</string>
+    <string name="CXDTextRetiro_NombreSucursal">Sucursal</string>
+    <!-- Fin ClienteXDefecto -->
+    <!--Salida Viaje-->
+    <string name="SVMessage">Abandonando el cliente a:</string>
+    <string name="SVButtonMessage_Volver">Volver al envío</string>
+    <string name="SVButtonMessage_OtroEnvio">Otro envío</string>
+    <string name="SVButtonMessage_OtroViaje">Otro viaje</string>
+    <string name="SVButtonMessage_Pausa">Pausar</string>
+    <string name="SVButtonMessage_Retornar">Retornar</string>
+    <string name="SVButtonMessage_Generados">Generados</string>
+    <!--Fin Salida Viaje-->
+
+    <string name="diadialogAccept">Aceptar</string>
+    <string name="dialogCancel">Continuar</string>
+    <string name="app_name">aLCHEMY Mobile TOYOSA</string>
+    <string name="version">"Version: "</string>
+    <!--<string name="nom_empresa">Fresh Food</string>
+      <string name="nom_empresa">Toyotoshi</string>-->
+    <string name="title_activity_recorrido__viaje">Map</string>
+    <string name="ingrese_credenciales">Ingrese Credenciales</string>
+    <string name="ingrese_obs">Ingrese Observaciones</string>
+    <string name="ingrese_rec">Ingrese Reclamo</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="log">Login</string>
+    <string name="NoPermiso">Usuario sin permisos para usar la app</string>
+    <string name="btnMoneda">Seleccionar moneda</string>
+    <string name="botonCliente">Seleccionar cliente</string>
+    <string name="Sin_permiosos">Usuario sin permisos para esta app</string>
+    <string name="title_company">TruckSales</string>
+    <string name="Pagar">Valores</string>
+    <string name="cod_empre">Cod. Empresa:</string>
+    <string name="Entorno">Entorno:</string>
+    <string name="ruta">URL:</string>
+    <string name="reto_Fac_0">Error en el servicio</string>
+    <string name="reto_Fac_1">La factura fue agregada exitosamente</string>
+    <string name="reto_Rec">El recibo fue agregado exitosamente</string>
+    <string name="reto_Cierre">El cierre de caja fue agregado exitosamente</string>
+    <string name="errorCierre">Error al grabar los datos</string>
+    <string name="errorEmpresa">No se encontraron datos de la empresa</string>
+    <string name="NumRec">Debe ingresar numero de recibo</string>
+    <string name="ValorMen">Debe ingresar un valor menor</string>
+    <string name="datoGuardo">Datos guardados correctamente</string>
+    <string name="tipoCam">Tipo de Cambio</string>
+    <string name="noDeuda">No se obtuvieron deudas para el cliente seleccionado</string>
+    <string name="noClientes">No se obtuvieron los clientes</string>
+    <string name="deuda">Solo puede seleccionar 10 deudas: </string>
+
+    <string name="viaje_pausado">Motivo: </string>
+    <string name="reto_Fac_2">No se obtuvo el fpago</string>
+    <string name="reto_Fac_3">No se obtuvo el valor asignado</string>
+    <string name="reto_Fac_4">No se obtuvo el numerador</string>
+    <string name="reto_Fac_5">No se obtuvo el tipo de cambio</string>
+    <string name="imprCopia">Desea imprimir una copia?</string>
+    <string name="elegir">Seleccione tipo de impresión</string>
+    <string name="reto_Fac_6">No se obtuvo el disponible</string>
+    <string name="reto_Fac_7">No se obtuvo la unidad de precio</string>
+    <string name="reto_Fac_8">Error al insertar la cabecera</string>
+    <string name="reto_Fac_9">Error al insertar lineas</string>
+    <string name="retornoLogInvalido">Datos inválidos</string>
+    <string name="Pausar">Pausar</string>
+    <string name="title_activity_clientexdefecto">ClientexdefectoActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_trans_map">Map</string>
+    <string name="title_activity_transmap_cobranza">Map</string>
+    <string name="saldo">Saldo:</string>
+    <string name="NumDocumento">Num. Docum:</string>
+    <string name="Vencimiento">Vencimiento:</string>
+    <string name="FacAfectadas">DEUDAS AFECTADAS</string>
+    <string name="ValoresPago">VALORES DE PAGO</string>
+    <string name="Importe">"Importe: "</string>
+
+    <string name="CodSucursal">Cod. Sucursal</string>
+    <string name="NombSucursal">Nombre Sucursal</string>
+    <string name="CodCliente">Cod. Cliente</string>
+    <string name="NombCliente">Nombre Cliente</string>
+    <string name="NumBanco">Cod. Banco</string>
+    <string name="NomBanco">Nombre Banco</string>
+    <string name="Seleccionar">Ir</string>
+    <string name="ToastCobranza">No se encontro el cliente</string>
+    <string name="DeudasTraidas"> tiene </string>
+    <string name="DeudasP">deudas</string>
+    <string name="alertIngresarImporte">"Ingrese el monto que desea pagar para la deuda: "</string>
+    <string name="deudatotal">"Por un total de: "</string>
+    <string name="NoHayEntregas">No hay entregas asociadas a este viaje</string>
+    <string name="RetornoMsg">Retornando</string>
+    <string name="title_activity__ejemplo">Activity_Ejemplo</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="mes_consuccess">Connect Success</string>
+    <string name="mes_confail">Connect Fail</string>
+    <string name="TitCheques">Ingresar Cheques</string>
+    <string name="TitCredSus">Ingresar Crédito Suspenso</string>
+    <string name="AgregaValores">Agregar</string>
+    <string name="TitEfectivo">Ingresar Efectivo</string>
+    <string name="TitVuelto">Ingresar Vuelto</string>
+    <string name="chequeImporte">Importe</string>
+    <string name="TitEfectivoUSD">Ingresar Efectivo USD</string>
+    <string name="TitRetenciones">Ingresar Retenciones</string>
+    <string name="TitDifRetenc">Ingresar Diferencia Retención</string>
+    <string name="noGenerados">"No existen recibos generados"</string>
+    <string name="noGeneradosFac">"No existen facturas generadas"</string>
+    <string name="noGeneradosObs">"No existen observaciones generadas"</string>
+    <string name="noMotivos">"No existen motivos generados"</string>
+    <string name="TitTarjetaCredito">Ingresar Tarjeta Crédito</string>
+    <string name="TitTarjetaDebito">Ingresar Tarjeta Débito</string>
+    <string name="TitTransferencias">Ingresar Transferencias</string>
+    <string name="TitValores">VALORES</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="efectivousd">Efectivo U$S</string>
+    <string name="tipocambio">"T.C. "</string>
+    <string name="cheques">Cheques</string>
+    <string name="TarjetaCredito">Tarjeta Crédito</string>
+    <string name="interes">Intereses:</string>
+    <string name="TarjetaDebito">Tarjeta Débito</string>
+    <string name="Transferencias">Transferencias</string>
+    <string name="Retenciones">Retenciones</string>
+    <string name="Vuelto">Vuelto</string>
+    <string name="CredSuspenso">Crédito Suspenso</string>
+    <string name="DifRet">Diferencia Retención</string>
+    <string name="AceptarValores">Aceptar</string>
+    <string name="Num">Número</string>
+
+
+    <string name="CodigoDocum">Docum.</string>
+    <string name="NumeroDocum">Nro.</string>
+    <string name="CodigoMon">Moneda</string>
+    <string name="CodigoBan">Banco</string>
+    <string name="DifReten">Dif. Reten</string>
+    <string name="Desc">"Descuento: "</string>
+    <string name="Descu">"Su deuda cuenta con Descuento: "</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="DTO">"Dto. "</string>
+
+
+    <string name="Producto">"Producto"</string>
+    <string name="Present">"Presentación:"</string>
+    <string name="Cantidad">"Cantidad:"</string>
+    <string name="Reposicion">"Reposición:"</string>
+    <string name="Precio">"Precio:"</string>
+    <string name="Facturar">"FACTURAR"</string>
+    <string name="Factura">"FACTURA DIRECTA PRODUCTOS"</string>
+    <string name="viaje">"Viaje: "</string>
+    <string name="CodProd">Cod. Prod.</string>
+    <string name="NombProd">Nom. Prod.</string>
+    <string name="cantiInval">"Stock actual: "</string>
+    <string name="cantError">"La cantidad debe ser menor: "</string>
+    <string name="noSuf">" no suficiente"</string>
+    <string name="sucursales">No se encontraron sucursales</string>
+    <string name="presentacionno">El artículo ingresado no cuenta con presentación, seleccione otro artículo</string>
+    <string name="venta">Venta Directa</string>
+    <string name="Unidades">Stock</string>
+    <string name="Vendida">Vend.</string>
+    <string name="stockError">No tiene stock para el producto seleccionado.</string>
+    <string name="reporte">REPORTE STOCK</string>
+    <string name="NotaC">NOTA DE CREDITO</string>
+    <string name="NotaCredito">NOTA DE CREDITO</string>
+    <string name="Fact">FACTURA DIRECTA</string>
+    <string name="Error">La factura es invalida</string>
+    <string name="fact">Factura Referencia</string>
+    <string name="generar">Generar NC</string>
+    <string name="reto_NC">La Nota de Credito fue agregada exitosamente</string>
+    <string name="ingArt">Debe ingresar un articulo</string>
+    <string name="artSelect">Seleccione un artículo:</string>
+    <string name="rut">"RUC: "</string>
+    <string name="suc">"Sucursal: "</string>
+    <string name="cant">"Cant.: "</string>
+    <string name="Importe2">"Importe Orig.: "</string>
+
+    <string name="TitleImpresora">"Impresora: "</string>
+
+    <string name="Pedidos">PEDIDO</string>
+    <string name="ZonaE">Zona de Entrega: </string>
+    <string name="docFac">Documento a Facturar:</string>
+    <string name="fPago">Forma de Pago:</string>
+    <string name="fEntrega">Fec. de Entrega:</string>
+    <string name="tipos">Tipo:</string>
+    <string name="turno">Turno:</string>
+    <string name="sucCli">Sucursal Cliente:</string>
+    <string name="ErrorTipoDoc">No se encontraron Tipos de Documentos</string>
+    <string name="desc">"Dto(%): "</string>
+    <string name="unidad">"Unidad: "</string>
+    <string name="PrecioDesc">PU. Dto </string>
+    <string name="descuento">Dto % </string>
+    <string name="deposito">Dep. </string>
+    <string name="Presenta">Presentación: </string>
+    <string name="ModificaVal">MODIFICAR VALORES: </string>
+    <string name="pedidoslistavacia">No cuenta con articulos ingresados</string>
+
+    <string-array name="pagos">
+        <item>CO</item>
+        <item>CR</item>
+    </string-array>
+
+    <string-array name="turnos">
+        <item>Mañana</item>
+        <item>Tarde</item>
+    </string-array>
+
+    <string-array name="tipos">
+        <item>Normal</item>
+        <item>Campaña</item>
+    </string-array>
+
+</resources>
